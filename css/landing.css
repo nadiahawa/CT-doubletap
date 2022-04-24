@@ -1,6 +1,12 @@
 *{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* blue #0850F8 */
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .container {  display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
@@ -38,7 +44,6 @@
   }
   
   .Content1 { 
-    display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -60,7 +65,39 @@
   
   .payments { grid-area: payments; }
   
-  .footer { grid-area: footer; }
+  .footer { 
+    grid-area: footer;
+    background-color: #0850F8;
+    text-align: center;
+    color:white;
+    height: 225px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+  }
+
+  .container-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+     
+  }
+
+  .container-footer-menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+   
+  }
+
+  .container-footer-menu-item{
+    padding-right:10px;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: 10;
+    padding-top:15px
+  
+  }
   
   .content3 {  display: grid;
     grid-template-columns: 1fr 1fr;
@@ -72,9 +109,17 @@
       "Email Task"
       "Analitics Calendar";
     grid-area: content3;
+    margin: auto;
+    justify-content: center;
+   
   }
   
-  .Solutions { grid-area: Solutions; }
+  .Solutions { 
+    grid-area: Solutions;
+    margin:auto;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px }
   
   .Email { grid-area: Email; }
   
@@ -92,7 +137,9 @@
     box-sizing: inherit;
     margin-bottom:80px;
     align-content: stretch ;
-    margin-left: 65%;
+    margin-left: 30%;
+    width: 50%;
+    margin-top: 5%;
   }
 
 
@@ -184,3 +231,21 @@
   color: black;
   
 }
+/* ======= */
+  .Email, .Task, .Analitics, .Calendar{
+    text-align: center;
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  
+  .p-content3-header{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .p-content3-fine-print{
+    text-align: center;
+    font-size: 10px;
+   
+  }
+/* >>>>>>> upstream/master */
