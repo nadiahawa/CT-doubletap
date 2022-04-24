@@ -33,8 +33,7 @@
     margin-bottom: 4rem;
   }
 
-  .how__header {
-  }
+
   .how__desc {
     max-width: 370px;
     margin-bottom: 3rem;
@@ -87,9 +86,57 @@
   .explore { grid-area: explore; }
   
   .payments { grid-area: payments; }
+
+  /* Start craig's footer */
+  .footer { 
+    grid-area: footer;
+    background-color: #0850F8;
+    text-align: center;
+    color:white;
+    height: 225px;
+    margin-right: -10px;
+    margin-left: -10px;
+
+  }
+
+  .btn {
+    background-color: white;
+    border: none;
+    color: white;
+    padding-top: 8px;
+    padding-right: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .container-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+      
+  }
+
+#container-footer-buttons {
+    padding-top: 12px;
+} 
+
+  .container-footer-menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+   
+  }
+
+  .container-footer-menu-item{
+    padding-right:10px;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: 10;
+    padding-top:15px
   
-  .footer { grid-area: footer; }
-  
+  }
+
   .content3 { 
     grid-area: content3;
     display: flex;

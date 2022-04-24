@@ -6,16 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <link rel="stylesheet" href="../css/landing.css">
+
+    <!-- Craig's button code (start) -->
+    <style>
+      .btn {
+        background-color: white;
+        border: none;
+        color: white;
+        padding-top: 8px;
+        padding-right: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+     </style>
+     <!-- Craig's button code (stop) -->
+
 </head>
 <body>
     <div class="container">
         <div class="nav"><h1>nav</h1></div>
         <div class="Focus-on-Business"><h1>FoB</h1></div>
-        <div class="Content2"><h1>C2</h1></div>
+
+
+
+
+
+
         <div class="Content1">
-          <div class="explore"><h1>explore</h1></div>
-          <div class="payments"><h1>explore</h1></div>
+          <div class="explore">
+            <h2>Start to Explore Double Tap</h2>
+            <small class="small-explore">A new and better way for small business to manage their customer base, payments and keep track of internal tasks.</small>
+          </div>
+          <div class="payment_cards">
+            <div id="first-icon" class="pay_card_content">
+              <img class="card_img" src="/images/landing/path-25.png" width="50" height="50">
+              <p>Payments</p>
+            </div>
+            <div class="pay_card_content">
+              <img class="card_img" src="/images/landing/page-1.png" width="50" height="50">
+              <p>Retain</p>
+            </div>
+            <div class="pay_card_content">
+              <img class="card_img" src="/images/landing/layer1.png" width="50" height="50">
+              <p>Reporting</p>
+            </div>
+            <div class="pay_card_content">
+              <img class="card_img" src="/images/landing/arrows.png" width="50" height="50">
+              <p>Convert</p>
+            </div>
+          
+          </div>
         </div>
+          
+
+      
+        
+
+
+        
+        <div class="Content2">
+          <div><img class="left-card" src="/images/landing/credit-card-picture.png" width="400" height="300"></div>
+          <div class="right-card"><h3>Start accepting payments with Ease</h3>
+          <p>Deliver the world of payment options and seamless checkout experiences,
+            making it easy for your customers to pay you for your products and services.</p>
+            <small>
+              <ul class="benefits-list">
+                <li>
+                  -Accept credit & debit cards, Paypay, ACH, Apple pay and more with the flick of a switch
+                </li>
+                <li>
+                  -Process transactions in up to 32 different currencies
+                </li>
+                <li>
+                  -Integrate with popular payment gateways like Stripe, and Braintree
+                </li>
+                <li>
+                  -Select from a variety of different checkout options and experiences
+                </li>
+              </ul></small>
+            <button class="learn_button" type="button">Learn more
+              <i class="arrow right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer"><h1>footer</h1></div>
 
         <!-- Craig's Footer -->
         <div class="footer">
@@ -23,9 +99,15 @@
           <p style="font-weight:bold">Let's Get Started</p>
 
           <div class="container-footer">
-            <img src="../images/landing/get-started-button.png" alt="Get Started Button" style="margin-right:40px;font-size:15.5px">
+
+            <div style="padding-right: 20px">
+                <button class="btn" class="container-footer-buttons" style="width:140px;height: 36.5px;color:white;font-size: 15px;font-weight: bold;padding-bottom:6px;   background-color: rgba(127,209,38,255);border-radius: 7px;"></i> Get Started &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/landing/white-double-arrow-use-this-one.png" style="height:9px;">
+                </button>
+            </div>
             
-            <img src="../images/landing/chat-button.png" alt="Chat with Us" style="margin-right:30px;">
+            <div style="padding-left:20px">
+              <button class="btn" id="container-footer-buttons" style="width:140px;height:20.5px;color:#0850F8;font-size: 11px;font-weight: 900;padding-bottom:35px; padding-top: 0px; border-color:rgb(104, 102, 102)"></i> <img src="../images/landing/talk-bubble.png" style="height:18px; padding-top: 5px;" > Chat With Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </div>
 
 
           </div>
@@ -58,28 +140,38 @@
             <img src="../images/landing/email-circle.png" alt="Email-Computer-Icon" style="width:152px;height:131px">
             <p class="p-content3-header">Email Dashboards</p>
             <p class="p-content3-fine-print">Automate client responses, and keep track of <br> any communication your team has with a client.</p>
-            <img src="../images/landing/learn-more-button.png" alt="Learn-More-Button">
+
+            <button class="btn" style="width:140px;height:20.5px;color:black;font-size: 11px;font-weight: bold;padding-bottom:20px;text-align: right; border:2px solid rgb(97, 96, 96)"></i> Learn More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/landing/arrow-right-black.png" style="height:8px;">
+            </button>
+
           </div>
           <div class="Task">
             <img src="../images/landing/task-check-circle.png" alt="Task-Check-Icon" style="width:152px;height:131px">
             <p class="p-content3-header">Task Management</p>
             <p class="p-content3-fine-print">Automate client responses, and keep track of <br> any communication your team has with a client.</p>
-            <img src="../images/landing/learn-more-button.png" alt="Learn-More-Button">
+
+            <button class="btn" style="width:140px;height:20.5px;color:black;font-size: 11px;font-weight: bold;padding-bottom:20px;text-align: right; border:2px solid rgb(97, 96, 96);"></i> Learn More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/landing/arrow-right-black.png" style="height:8px;" >
+            </button>
+
+             
 
           </div>
           <div class="Analitics">
             <img src="../images/landing/analytics-graph-circle.png" alt="Analytics_Icon" style="width:152px;height:131px">
             <p class="p-content3-header">Analytics</p>
             <p class="p-content3-fine-print">Automate client responses, and keep track of <br> any communication your team has with a client.</p>
-            <img src="../images/landing/learn-more-button.png" alt="Learn-More-Button">
+             
+            <button class="btn" style="width:140px;height:20.5px;color:black;font-size: 11px;font-weight: bold;padding-bottom:20px;text-align: right; border:2px solid rgb(97, 96, 96)"></i> Learn More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/landing/arrow-right-black.png" style="height:8px;" >
+            </button>
 
           </div>
           <div class="Calendar">
             <img src="../images/landing/calendar-circle.png" alt="" style="width:152px;height:131px">
             <p class="p-content3-header">Project Calendars</p>
             <p class="p-content3-fine-print" style="padding-bottom:2px">Automate client responses, and keep track of <br> any communication your team has with a client.</p>
-            <img src="../images/landing/learn-more-button.png" alt="Learn-More-Button">
-
+          
+            <button class="btn" style="width:140px;height:20.5px;color:black;font-size: 11px;font-weight: bold;padding-bottom:20px;text-align: right; border:2px solid rgb(97, 96, 96)"></i> Learn More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/landing/arrow-right-black.png" style="height:8px;" >
+            </button>
           </div>
         </div>
       </div>
