@@ -33,8 +33,7 @@
     margin-bottom: 4rem;
   }
 
-  .how__header {
-  }
+
   .how__desc {
     max-width: 370px;
     margin-bottom: 3rem;
@@ -43,7 +42,9 @@
   .how__card {
     display: flex;
     max-width: 768px;
-    margin-inline: auto;
+    margin-inline: auto;   
+     /* animation: start small */
+    transform: scale(.1); 
   }
   .how__card-left {
     border-radius: 2rem 0 0 2rem;
@@ -135,53 +136,26 @@
     padding-top:15px
   
   }
-  
-  .content3 {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Solutions Solutions"
-      "Email Task"
-      "Analitics Calendar";
+
+  .content3 { 
     grid-area: content3;
-    margin: auto;
-    justify-content: center;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3rem;
   }
-  
-  .Solutions { 
-    grid-area: Solutions;
-    margin:auto;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 40px }
-  
-  .Email { grid-area: Email; }
-  
-  .Task { grid-area: Task; }
-  
-  .Analitics { grid-area: Analitics; }
-  
-  .Calendar { grid-area: Calendar; }
+  .content3 .how__card-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  /* animation: wait until within viewport */
+  [data-inViewport="scaleIn"].is-inViewport {    
+    animation: scaleIn .3s linear 0s 1 normal forwards;
+  }
 
-  .Email, .Task, .Analitics, .Calendar{
-    text-align: center;
-    width: 450px;
-    margin-bottom: 20px;
+  @keyframes scaleIn {
+    0% {  }
+    80% { transform: scale(1.2); }
+    100% {transform: scale(1);}
   }
-  
-  .p-content3-header{
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .p-content3-fine-print{
-    text-align: center;
-    font-size: 10px;
-   
-  }
-  /* end craig's footer */
-
-  
