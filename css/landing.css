@@ -1,3 +1,6 @@
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .container {  display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
@@ -28,20 +31,32 @@
     grid-template-areas:
       ". .";
     grid-area: Content2;
+
+    margin: auto;
+    width: 45%;
+    height: 500px;
   }
   
-  .Content1 {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .Content1 { 
+    display: grid;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "explore explore explore"
       "payments payments payments";
     grid-area: Content1;
+    align-items: center;
+    justify-content: space-between;
+
   }
   
-  .explore { grid-area: explore; }
+  .explore { 
+    grid-area: explore;
+    text-align: center;
+    border-top: 1px solid grey;
+   }
   
   .payments { grid-area: payments; }
   
@@ -68,4 +83,104 @@
   .Analitics { grid-area: Analitics; }
   
   .Calendar { grid-area: Calendar; }
+
+  .payment_cards{
+    display:grid;
+    grid-auto-flow: column;
+    gap:20px;
+    font-family: sans-serif;
+    box-sizing: inherit;
+    margin-bottom:80px;
+    align-content: stretch ;
+    margin-left: 65%;
+  }
+
+
+  .pay_card_content{
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    /* background-color: #0850F8; */
+    background: white;
+    border-radius: 10px;
+    color:black;
+    height: 130px;
+    width: 110px;
+    text-align: center;
+    margin-left: 45px;
+  }
+
+  #first-icon{
+    background-color: #0850F8;
+    color: white;
+    text-align: center;
+  }
+
+.benefits-list{
+  list-style-type:none;
+  margin-left: 0px;
+  padding-left: 0px;
+  }
+
+  .learn_button{
+    border-style: solid;
+    color:white;
+    margin-left: 40px;
+    height:40px;
+    width:216px;
+    background-color: #0850F8;
+    border-radius: 10px;
+    border-width: medium;
+    border-color: white;
+    font-size: 15px;
+
+  }
+
+  .right-card{
+    background-color: #0850F8;
+    color:white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top:60px;
+    padding-right:60px;
+    padding-bottom:55px;
+    padding-left:30px;
+  }
   
+  .left-card{
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    padding-bottom: 135px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px !important;
+  }
+
+  .card_img{
+    padding-top: 30px;
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .small-explore{
+    padding: 25px;
+    max-height: 15px;
+    max-width: 500px;
+  }
+.money-symbol{
+  color: black;
+  
+}
