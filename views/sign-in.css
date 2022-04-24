@@ -26,7 +26,9 @@ body {
   border-bottom-right-radius: 100%;
 }
 .sign-up button {
-  border: 1px solid white;
+  border: 2px solid white;
+  background-color:  rgb(46 0 238);
+  
   font-weight: 600;
   /* background-color: none;materi */
 }
@@ -36,6 +38,7 @@ body {
   /* max-width:50%; */
   /* min-height:100%; */
   text-align: center;
+  
 }
 .inputs {
   display: grid;
@@ -67,15 +70,18 @@ input {
 /* .btn-socials button {
   margin-left: 1rem;
 } */
-.inline{
+.inline {
   max-width:400px;
   margin:auto;
+  border-radius: 25px;
+  
 }
 .input-icons i {
   position: absolute;
   margin-top: 16px;
   margin-left: 8px;
   margin-left: 1.5rem;
+  /* border-radius: 25px; */
 }
 .input-icons {
   width: 100%;
@@ -90,10 +96,27 @@ input {
   padding: 10px;
   text-align: center;
   margin-bottom: 3px;
+  border-radius: 25px;
 }
 p {
   margin-top: 2rem;
 }
 #btn-icons {
   margin-left: 1rem;
+}
+
+.moon{
+  /* position: static; */
+  /* height: auto;
+  width: auto; */
+  padding-right: 50%;
+  /* margin-top: 10px; */
+  /* margin-right: 10px; */
+  padding-left: 35%;
+  /* padding-bottom: 200px; */
+  flex:1 1 25%;
+  /* min-width:60%; */
+  min-height:100%;
+  text-align:center;
+
 }
