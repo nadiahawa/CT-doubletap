@@ -1,0 +1,70 @@
+#sign-up {
+    font-size: large;
+
+}
+
+
+#signupbtn {
+    border-radius: 9999px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+.row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#socials {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    border: 1;
+    border-color: black;
+}
+
+.fb {
+    background-image: url('../images/sign-up/facebook.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 18px 17px;
+    color: #000;
+}
+
+.twtr {
+    background-image: url('../images/sign-up/twitter.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 18px 17px;
+    color: #000;
+}
+
+.gogl {
+    background-image: url('../images/sign-up/google.jpeg');
+    background-repeat: no-repeat;
+    background-size: 40px 30px;
+    background-position: 13px 17px;
+    color: #000;
+}
+
+.lnkd {
+    background-image: url('../images/sign-up/linkedin.webp');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 14px 12px;
+    color: #000;
+
+}
+
+#bigimage {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+.form-control {
+    border-radius: 9999px;
+}
