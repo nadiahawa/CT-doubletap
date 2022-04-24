@@ -43,7 +43,9 @@
   .how__card {
     display: flex;
     max-width: 768px;
-    margin-inline: auto;
+    margin-inline: auto;   
+     /* animation: start small */
+    transform: scale(.1); 
   }
   .how__card-left {
     border-radius: 2rem 0 0 2rem;
@@ -100,6 +102,13 @@
     font-size: 1.5rem;
     font-weight: 700;
   }
-  
+  /* animation: wait until within viewport */
+  [data-inViewport="scaleIn"].is-inViewport {    
+    animation: scaleIn .3s linear 0s 1 normal forwards;
+  }
 
-  
+  @keyframes scaleIn {
+    0% {  }
+    80% { transform: scale(1.2); }
+    100% {transform: scale(1);}
+  }
