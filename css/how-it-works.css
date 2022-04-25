@@ -30,10 +30,12 @@
   
   .Focus-on-Business {
     grid-area: Focus-on-Business;
-    margin: 150px;
-    margin-left: 150px;
+    margin: 150px auto;
     font-size: 200%;
     line-height: 1em;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1000px;
   }
    /* Jose's */
   .Content2 { 
@@ -188,7 +190,6 @@
 
 .links {
   grid-area: nav;
-  
   display: flex;
   padding-top: 30px;
   justify-content: space-evenly;
@@ -244,7 +245,7 @@
   display: inline-flex;
   float: right;
   margin-top: -400px;
-
+  max-width: 498px;
 }
 
 .small{
