@@ -2,141 +2,160 @@
   --col-blue: #0850F8;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "nav"
-    "Focus-on-Business"
-    "Content1"
-    "Content1"
-    "Content2"
-    "Content2"
-    "content3"
-    "content3"
-    "footer";
-}
-
-.nav {
-  grid-area: nav;
-  text-decoration: none;
-  display: inline flex;
-  width: 100%;
-  padding-left: 60px;
-}
-
-.Focus-on-Business {
-  grid-area: Focus-on-Business;
-  margin: 150px;
-  margin-left: 150px;
-  font-size: 200%;
-  line-height: 1em;
-}
-
-.Content2 {
-  grid-area: Content2;
-}
-
-.Content1 {
-  grid-area: Content1;
-}
-
-.explore {
-  grid-area: explore;
-}
-
-.payments {
-  grid-area: payments;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.content3 {
-  grid-area: content3;
-}
+.container {  display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav"
+      "Focus-on-Business"
+      "Content1"
+      "Content1"
+      "Content2"
+      "Content2"
+      "content3"
+      "content3"
+      "footer";
+  }
+  
+  .nav { grid-area: nav; }
+  
+  .Focus-on-Business { grid-area: Focus-on-Business; }
+  
+  .Content2 { 
+    grid-area: Content2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4rem;
+  }
 
 
-#forms {
-  grid-area: nav;
-  display: inline;
-  margin-left: 10px;
-}
+  .how__desc {
+    max-width: 370px;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .how__card {
+    display: flex;
+    max-width: 768px;
+    margin-inline: auto;   
+     /* animation: start small */
+    transform: scale(.1); 
+  }
+  .how__card-left {
+    border-radius: 2rem 0 0 2rem;
+    padding: 4rem 3rem 3rem 2rem;
+    width: 33%;
+    border: 1px solid #ccc;
+    border-right: none;
+  }
+  .content3 .how__card-left {
+    border: none
+  }
+  .how__card-left img {
+    object-fit: scale-down;
+    width: 100%;
+  }
+  .how__card-right {
+    width: 67%;
+    border-radius: 0 2rem 2rem 0;
+    background-color: var(--col-blue);
+    padding: 4rem 2rem 4rem;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: white;
+  }
+  .how__card-header {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+  }
+  .how__card-text {
+    font-size: .8rem;
+  }
+  
+  .Content1 {  grid-area: Content1;
+  }
+  
+  .explore { grid-area: explore; }
+  
+  .payments { grid-area: payments; }
 
-.img1 {
-  float: left;
-  display: inline-flex;
-  padding: 20px;
-}
+  /* Start craig's footer */
+  .footer { 
+    grid-area: footer;
+    background-color: #0850F8;
+    text-align: center;
+    color:white;
+    height: 225px;
+    margin-right: -10px;
+    margin-left: -10px;
 
-.links {
-  grid-area: nav;
+  }
 
-  display: flex;
-  padding-top: 30px;
-  justify-content: space-evenly;
-}
+  .btn {
+    background-color: white;
+    border: none;
+    color: white;
+    padding-top: 8px;
+    padding-right: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 
-.home {
-  margin-left: 100px;
-  color: black;
-}
+  .container-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+      
+  }
 
-.features {
-  margin-left: 100px;
-  color: black;
-}
+#container-footer-buttons {
+    padding-top: 12px;
+} 
 
-.pricing {
-  margin-left: 100px;
-  color: black;
-}
+  .container-footer-menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+   
+  }
 
-.how-it-works {
-  margin-left: 100px;
-  color: black;
-}
+  .container-footer-menu-item{
+    padding-right:10px;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: 10;
+    padding-top:15px
+  
+  }
 
-.support {
-  margin-left: 100px;
-  color: black;
-}
+  .content3 { 
+    grid-area: content3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3rem;
+  }
+  .content3 .how__card-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  /* animation: wait until within viewport */
+  [data-inViewport="scaleIn"].is-inViewport {    
+    animation: scaleIn .3s linear 0s 1 normal forwards;
+  }
 
-#header {
-  grid-area: Focus-on-Business;
-  display: inline-flex;
-  float: right;
-  margin-top: -400px;
-
-}
-
-.small {
-  font-size: 20px;
-  color: grey;
-}
-
-.mid {
-  font-size: 35px;
-}
-
-.subpar {
-  color: grey;
-  font-size: 20px;
-  width: 45%;
-}
-
-.trial {
-  font-size: medium;
-}
-
-#newptag {
-  border-bottom: 1px solid rgb(169, 169, 169);
-  height: 300px;
-  max-width: 50%;
-  margin-left: 500px;
-}
+  @keyframes scaleIn {
+    0% {  }
+    80% { transform: scale(1.2); }
+    100% {transform: scale(1);}
+  }
