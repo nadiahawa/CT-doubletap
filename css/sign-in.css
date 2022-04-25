@@ -26,6 +26,7 @@ body {
   min-height:100%;
   text-align: center;
   border-bottom-right-radius: 100%;
+  
 }
 .sign-up button {
   border: 2px solid white;
@@ -111,14 +112,22 @@ p {
   /* position: static; */
   /* height: auto;
   width: auto; */
-  padding-right: 50%;
+  padding-right: 90%;
   /* margin-top: 10px; */
-  /* margin-right: 10px; */
+  margin-right: 10;
   padding-left: 35%;
   /* padding-bottom: 200px; */
-  flex:1 1 25%;
+  /* flex:1 1 25%; */
   /* min-width:60%; */
-  min-height:100%;
-  text-align:center;
+  /* min-height:125%; */
+  /* text-align:center; */
+  /* width: 5px; */
+  /* height: 5px; */
+  float: left;
+}
+.moon img {
+  display: flex
+  padding-right: ;
+  float: left;
 
 }
