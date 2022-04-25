@@ -82,9 +82,18 @@
   margin-left: 100px;
   color: black;
 }
+
+.home:hover{
+  color:rgb(29, 104, 255)
+}
+
 .features{
   margin-left: 100px;
   color: black;
+}
+
+.features:hover{
+  color:rgb(29, 104, 255)
 }
 
 .pricing{
@@ -92,9 +101,17 @@
   color: black;
 }
 
+.pricing:hover{
+  color:rgb(29, 104, 255)
+}
+
 .how-it-works{
   margin-left: 100px;
   color: black;
+}
+
+.how-it-works:hover{
+  color:rgb(29, 104, 255)
 }
 
 .support{
@@ -102,11 +119,16 @@
   color: black;
 }
 
+.support:hover{
+   color:rgb(29, 104, 255)
+}
+
 #header {
   grid-area: Focus-on-Business;
   display: inline-flex;
   float: right;
   margin-top: -400px;
+  flex-wrap: wrap;
 
 }
 
@@ -135,3 +157,4 @@
   max-width: 50%;
   margin-left: 500px;
 }
+

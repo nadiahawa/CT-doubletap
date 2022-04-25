@@ -24,11 +24,23 @@ body {
       "content3"
       "footer";
   }
+  /* Jose's */
+  .nav {
+    grid-area: nav;
+    text-decoration: none;
+    display: inline flex;
+    width: 100%;
+    padding-left:60px;
+  }
   
-  .nav { grid-area: nav; }
-  
-  .Focus-on-Business { grid-area: Focus-on-Business; }
-  
+  .Focus-on-Business {
+    grid-area: Focus-on-Business;
+    margin: 150px;
+    margin-left: 150px;
+    font-size: 200%;
+    line-height: 1em;
+  }
+   /* Jose's */
   .Content2 {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -60,7 +72,6 @@ body {
   .explore { 
     grid-area: explore;
     text-align: center;
-    border-top: 1px solid grey;
    }
   
   .payments { grid-area: payments; }
@@ -115,17 +126,19 @@ body {
     grid-area: content3;
     margin: auto;
     justify-content: center;
-   
+   padding-left: 20%;
   }
   
   .Solutions { 
     grid-area: Solutions;
-    margin:auto;
+    margin:20%;
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 40px }
+    margin-bottom: 40px;
+    margin-left: 25%;
+  }
   
-  .Email { grid-area: Email; }
+  .Email { grid-area: Email;}
   
   .Task { grid-area: Task; }
   
@@ -141,7 +154,7 @@ body {
     box-sizing: inherit;
     margin-bottom:80px;
     align-content: stretch ;
-    margin-left: 30%;
+    margin-left: 25%;
     width: 50%;
     margin-top: 5%;
   }
@@ -253,3 +266,106 @@ body {
    
   }
 /* >>>>>>> upstream/master */
+
+/*nav and fob*/  /* Jose's */
+
+#forms {
+  grid-area: nav;
+  display: inline;
+  margin-left: 10px;
+}
+
+.img1 {
+  float: left;
+  display: inline-flex;
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.links {
+  grid-area: nav;
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-evenly;
+}
+
+.home{
+  margin-left: 100px;
+  color: black;
+}
+
+.home:hover{
+  color:rgb(29, 104, 255)
+}
+
+.features{
+  margin-left: 100px;
+  color: black;
+}
+
+.features:hover{
+  color:rgb(29, 104, 255)
+}
+
+.pricing{
+  margin-left: 100px;
+  color: black;
+}
+
+.pricing:hover{
+  color:rgb(29, 104, 255)
+}
+
+.how-it-works{
+  margin-left: 100px;
+  color: black;
+}
+
+.how-it-works:hover{
+  color:rgb(29, 104, 255)
+}
+
+.support{
+  margin-left: 100px;
+  color: black;
+}
+
+.support:hover{
+   color:rgb(29, 104, 255)
+}
+
+#header {
+  grid-area: Focus-on-Business;
+  display: inline-flex;
+  float: right;
+  margin-top: -400px;
+
+}
+
+.small{
+  font-size: 20px;
+  color: grey;
+}
+
+.mid{
+  font-size: 35px;
+}
+
+.subpar{
+  color:grey;
+  font-size: 20px;
+  width: 45%;
+}
+
+.trial{
+  font-size: medium;
+}
+
+#newptag{
+  border-bottom: 1px solid rgb(169, 169, 169);
+  height: 300px;
+  max-width: 50%;
+  margin-left: 500px;
+}
+
+   /* Jose's */
