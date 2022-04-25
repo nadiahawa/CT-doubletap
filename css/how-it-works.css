@@ -97,10 +97,6 @@
   .Content1 {  grid-area: Content1;
   }
   
-  display: flex;
-  padding-top: 30px;
-  justify-content: space-evenly;
-}
 
 .home{
   margin-left: 100px;
